@@ -1,0 +1,81 @@
+:root {
+  --bg-primary: #03AED2;
+  --text-primary: #FFF;
+  --hov-primary: #008EB2;
+  --bg-secondary: #FDDE55;
+  --text-secondary: #111;
+  --hov-secondary: #FEE58D;
+  --bg-warning: #FF6961;
+  --hov-warning: #E54;
+}
+
+.input {
+  border-radius: 8px;
+  padding: 12px;
+  border: solid 1px rgb(133, 133, 133);
+  font-size: 18px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex--center {
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.page {
+  width: 100vw;
+}
+
+.container {
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 6px 16px;
+  border-radius: 8px;
+  border: solid 1px #d1d1d1;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color .4s;
+}
+
+.btn--primary {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+.btn--primary:hover {
+  background-color: var(--hov-primary);
+}
+
+.btn--warning {
+  color: var(--text-primary);
+  background-color: var(--bg-warning);
+}
+
+.btn--warning:hover {
+  background-color: var(--hov-warning);
+}
+
+.btn--secondary {
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+}
+
+.btn--secondary:hover {
+  background-color: var(--hov-secondary);
+}
+
+.btn--big {
+  font-size: 24px;
+  padding: 16px 32px;
+  border-radius: 16px;
+}

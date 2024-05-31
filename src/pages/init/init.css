@@ -1,0 +1,24 @@
+.init {
+  width: 100%;
+  padding: 32px;
+}
+
+.init__team-container {
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.init__team-container__row {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  align-items: center;
+}
+
+.init__team-container__button {
+  min-width: 70px;
+  box-sizing: border-box;
+  margin-right: 8px;
+}
