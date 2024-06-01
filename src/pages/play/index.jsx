@@ -35,7 +35,7 @@ const Play = () => {
     [teams.length, numReady, dispatcher]
   );
   useHotkeys(
-    "n",
+    "n,j",
     (e) => {
       e.preventDefault();
       setFocusIdx((curr) => (curr + 1) % teams.length);
@@ -44,7 +44,7 @@ const Play = () => {
     [teams.length]
   );
   useHotkeys(
-    "shift+n",
+    "shift+n,k",
     (e) => {
       e.preventDefault();
       setFocusIdx((curr) => (teams.length + curr - 1) % teams.length);

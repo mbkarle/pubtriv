@@ -103,10 +103,10 @@ const TeamEditor = ({ teamIdx, onDoneChange, focusIdx, setFocusIdx }) => {
               onChange={({ target }) => {
                 setStageInput(target.value);
               }}
-              onKeyPress={(e) => {
+              onKeyDown={(e) => {
                 if (e.key === "Enter") {
                   confirmStage();
-                } else if (e.key === "g") {
+                } else if (e.key === "g" || e.key === "Escape") {
                   blockRef.current?.focus();
                 }
               }}
