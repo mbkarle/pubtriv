@@ -63,10 +63,12 @@ const Init = () => {
                 Resume
               </a>
             </div>
-          ) : (
+          ) : teams.length ? (
             <a className="btn btn--primary btn--big" href="/play">
               Play!
             </a>
+          ) : (
+            <div>Add teams to play!</div>
           )}
         </div>
       </div>

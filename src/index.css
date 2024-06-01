@@ -91,8 +91,8 @@ body {
 
 .btn--big {
   font-size: 24px;
-  padding: 16px 32px;
-  border-radius: 16px;
+  padding: 16px 64px;
+  border-radius: 8px;
 }
 
 .margin--left--sm {
