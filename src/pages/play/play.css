@@ -1,5 +1,5 @@
 .play {
-  margin: 0 32px;
+  margin: 0 min(96px, 10%);
 }
 
 .play__row, .play__header-row {
@@ -8,4 +8,86 @@
 }
 
 .play__row {
+}
+
+.play__next-round {
+  margin-left: 8px;
+}
+
+.team-editor {
+  margin-top: 16px;
+  padding: 16px;
+  border-bottom: 1px solid #DDD;
+}
+
+.team-editor:focus {
+  outline: solid 2px rgba(3, 174, 210, 0.8);
+  border-radius: 4px;
+}
+
+.team-editor__header {
+  justify-content: space-between;
+}
+
+.team-editor__header__input {
+  margin-right: 8px;
+  flex-grow: 1;
+}
+
+.history-editor {
+  justify-content: flex-end;
+}
+
+.history-editor__table {
+  border-spacing: 0;
+  margin-right: 8px;
+  border-radius: 4px;
+  border: 1px solid #AAA;
+}
+
+.history-editor__td {
+  border-right: 1px solid #AAA;
+}
+
+.history-editor__td, .history-editor__th {
+  padding: 8px;
+  box-sizing: border-box;
+  width: 64px;
+  text-align: center;
+}
+
+.history-editor__input {
+  border: none;
+  width: 100%;
+}
+
+.history-editor__btn, .team-editor__header__btn {
+  min-width: 72px;
+}
+
+.team-editor__header__tnum {
+  height: 32px;
+  width: 32px;
+  box-sizing: border-box;
+  border-radius: 100%;
+  text-align: center;
+  padding: 0;
+  transition: background-color 0.4s;
+  border: solid 1px var(--border-color);
+  cursor: pointer;
+}
+
+.team-editor__header__tnum:focus {
+  outline: solid 2px rgba(3, 174, 210, 0.8);
+  transition: transform 0.5s;
+  transform: rotate(359deg);
+}
+
+.team-editor__header__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.team-editor__header__staged {
+  margin-bottom: 8px;
 }

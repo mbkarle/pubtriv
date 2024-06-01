@@ -1,6 +1,6 @@
 import "./init.css";
 
-import useTeams from "src/hooks/teams";
+import useTeams, { getRound } from "src/hooks/teams";
 
 const TeamInfo = ({ name, onNameChange, onRemove }) => {
   return (
@@ -23,6 +23,7 @@ const TeamInfo = ({ name, onNameChange, onRemove }) => {
 
 const Init = () => {
   const [teams, dispatcher] = useTeams();
+  const round = getRound(teams);
 
   return (
     <div className="page">
@@ -47,9 +48,26 @@ const Init = () => {
           </div>
         </div>
         <div className="col flex--center">
-          <a className="btn btn--primary btn--big" href="/play">
-            Play!
-          </a>
+          {round > 1 ? (
+            <div className="row">
+              <div className="row flex--center font--md">
+                Game in progress:{" "}
+              </div>
+              <button
+                className="btn btn--warning margin--left--sm"
+                onClick={() => dispatcher.resetAll()}
+              >
+                Reset
+              </button>
+              <a className="btn btn--primary margin--left--sm" href="/play">
+                Resume
+              </a>
+            </div>
+          ) : (
+            <a className="btn btn--primary btn--big" href="/play">
+              Play!
+            </a>
+          )}
         </div>
       </div>
     </div>

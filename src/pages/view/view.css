@@ -1,0 +1,76 @@
+.view__page {
+  background-color: var(--bg-primary);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.view {
+  margin: 0 min(96px, 10%);
+}
+
+.view__header {
+  color: white;
+}
+
+.view__leader {
+  position: relative;
+  width: 100%;
+}
+
+.team-block {
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  transition: top 2s;
+  padding: 16px 32px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.4);
+  height: 100px;
+  box-sizing: border-box;
+}
+
+.team-block__pos {
+  border-radius: 100%;
+  background-color: #333;
+  color: white;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.team-block__pos--1 {
+  background-color: gold;
+}
+
+.team-block__pos--2 {
+  background-color: silver;
+}
+
+.team-block__pos--3 {
+  background-color: #CD7F32;
+}
+
+.team-block__total {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.team-block__title {
+  overflow: ellipsis;
+}
+
+.team-block__title, .team-block__total {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.team-block__staged {
+  font-size: 20px;
+}
